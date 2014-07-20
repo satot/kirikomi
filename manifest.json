@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Kirikomi change",
+  "version": "1.0",
+  "description": "To change some CSS of kirikomi blog",
+  "permissions":[
+    "tabs"
+  ],
+  "icons":{
+    "128":"icon.png"
+  },
+  "content_scripts":[{
+    "matches":["http://kirik.tea-nifty.com/diary/*"],
+    "js":["js/lib/jquery.min.js","js/popup.js"],
+    "run_at":"document_start"
+  }]
+}
